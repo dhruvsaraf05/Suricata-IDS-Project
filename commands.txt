@@ -1,0 +1,11 @@
+sudo apt update
+sudo apt install suricata
+ip a
+sudo suricata-update
+sudo suricata -i enp0s3
+sudo apt install nmap
+sudo nmap -sS localhost
+sudo nano /etc/suricata/rules/local.rules
+sudo suricata -i enp0s3 -S /etc/suricata/rules/local.rules
+ping google.com
+cat /var/log/suricata/fast.log
