@@ -1,6 +1,5 @@
 # Suricata-IDS-Project
 Suricata IDS implementation with custom rule detection
-# Suricata IDS Project
 
 ##  Overview
 
