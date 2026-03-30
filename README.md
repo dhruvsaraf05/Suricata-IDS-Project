@@ -2,13 +2,13 @@
 Suricata IDS implementation with custom rule detection
 # Suricata IDS Project
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates the implementation of **Suricata** as a Network Intrusion Detection System (IDS) in a Linux environment. The system monitors real-time network traffic and detects suspicious activity using predefined and custom rules.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * To understand the working of an Intrusion Detection System (IDS)
 * To install and configure Suricata on Linux
@@ -18,7 +18,7 @@ This project demonstrates the implementation of **Suricata** as a Network Intrus
 
 ---
 
-## 🛠️ Tools & Technologies Used
+##  Tools & Technologies Used
 
 * **Suricata** – Network Intrusion Detection System
 * **Ubuntu Linux** – Operating System
@@ -28,7 +28,7 @@ This project demonstrates the implementation of **Suricata** as a Network Intrus
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### 1. Update System
 
@@ -50,7 +50,7 @@ ip a
 
 ---
 
-## 🚀 Running Suricata
+##  Running Suricata
 
 ```bash
 sudo suricata -i enp0s3
@@ -58,7 +58,7 @@ sudo suricata -i enp0s3
 
 ---
 
-## 🔄 Update Rules
+##  Update Rules
 
 ```bash
 sudo suricata-update
@@ -66,7 +66,7 @@ sudo suricata-update
 
 ---
 
-## 🧪 Simulating Attack using Nmap
+##  Simulating Attack using Nmap
 
 ```bash
 sudo apt install nmap -y
@@ -75,7 +75,7 @@ sudo nmap -sS localhost
 
 ---
 
-## 🧠 Custom Rule Implementation
+##  Custom Rule Implementation
 
 A custom rule was created to detect ICMP (ping) packets.
 
@@ -85,7 +85,7 @@ alert icmp any any -> any any (msg:"Ping Detected"; sid:1000001; rev:1;)
 
 ---
 
-## ▶️ Running Suricata with Custom Rule
+##  Running Suricata with Custom Rule
 
 ```bash
 sudo suricata -i enp0s3 -S /etc/suricata/rules/local.rules
@@ -93,7 +93,7 @@ sudo suricata -i enp0s3 -S /etc/suricata/rules/local.rules
 
 ---
 
-## 🌐 Generating Traffic
+##  Generating Traffic
 
 ```bash
 ping google.com
@@ -101,7 +101,7 @@ ping google.com
 
 ---
 
-## 📂 Log Analysis
+##  Log Analysis
 
 ```bash
 cat /var/log/suricata/fast.log
@@ -109,7 +109,7 @@ cat /var/log/suricata/fast.log
 
 ---
 
-## 📊 Results
+##  Results
 
 * Suricata successfully monitored network traffic
 * Alerts were generated for network activity
@@ -118,13 +118,13 @@ cat /var/log/suricata/fast.log
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 This project demonstrates the effective use of Suricata as a Network Intrusion Detection System. The implementation shows how network traffic can be monitored and analyzed in real time. The addition of custom rules highlights the flexibility of Suricata in detecting specific types of network activity.
 
 ---
 
-## 🚀 Future Scope
+##  Future Scope
 
 * Integration with Intrusion Prevention Systems (IPS)
 * Deployment in real-world enterprise environments
